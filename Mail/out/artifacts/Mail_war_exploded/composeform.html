@@ -1,0 +1,45 @@
+<link href="mail-icon.png" rel="icon" type="image/x-icon"/>
+    <style type="text/css">
+        .inputform{float:left;
+            border:4px orangered;border-radius:10px;padding:10px;
+            box-shadow: maroon;
+            background: url("g.jfif");
+
+        }
+        .inputform table tr td input,textarea,select{width:200px;}
+        #gender1,#gender2{width:10px;}
+        #submit{margin-left:108px;width:100px;}
+        #reset{width:100px;}
+
+        tr{
+            color: white;
+            font-size: large;
+        }
+
+
+
+    </style>
+
+<body background="k.jpg">
+
+<div align="center">
+    <div class="inputform">
+        <h2 style="background-color:white" >Compose Mail Form</h2>
+        <form action="ComposeServletProcess" method="get">
+            <table align="center">
+                <tr><td>Id:</td><td><input type="text" name="id"/></td></tr>
+                <tr><td>To:</td><td><input type="text" name="to"/></td></tr>
+                <tr><td>Subject:</td><td><input type="text" name="subject"/></td></tr>
+                <tr><td>Message:</td>
+                <td>
+                    <textarea name="message" rows="10" cols="100" ></textarea>
+                    </td></tr>
+                <tr><td colspan="3"><input id="submit" type="submit" value="Send Mail"/>
+                </td></tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <link href="mail-icon.png" rel="icon" type="image/x-icon"/>
+    <title>Register Page</title>
+    <style type="text/css">
+        .inputform{float:left;
+            width:450px;
+            border:4px orangered;border-radius:10px;padding:10px;
+            box-shadow: maroon;
+            background: url("g.jfif");
+
+        }
+        .inputform table tr td input,textarea,select{width:200px;}
+        #gender1,#gender2{width:10px;}
+        #submit{margin-left:108px;width:100px;}
+        #reset{width:100px;}
+
+        tr{
+            color: white;
+            font-size: large;
+        }
+        body{
+            font-size: large;
+        }
+
+        .design{background-color:white;color:black;}
+
+        /*padding-left:100px;*/
+    </style>
+</head>
+<body background="k.jpg">
+
+<div align="center">
+<!-- header -->
+<h1 align="center">CSPIT MAIL</h1>
+<!--<h3 style="background-color:maroon;color:maroon;">c</h3>-->
+<!-- body -->
+
+<div class="inputform">
+    <h2 class="design">Registration Form</h2>
+    <h4 align="left" style="color: maroon">*All fields are mandatory*</h4>
+    <form action="RegisterServlet" method="post">
+        <table align="center">
+            <tr><td>Id:</td><td><input type="text" name="id"/></td></tr>
+            <tr><td>Name:</td><td><input type="text" name="name"/></td></tr>
+            <tr><td>Email:</td><td><input type="text" name="email"/>@cspit.com</td></tr>
+            <tr><td>Password:</td><td><input type="password" name="password"/></td></tr>
+            <tr><td>Gender:</td><td><input id="gender1" type="radio" name="gender" value="male"/>Male
+                <input type="radio" id="gender2" name="gender" value="female"/>Female
+            </td></tr>
+            <tr><td>Date Of Birth:</td><td><input type="date" name="dob"/></td></tr>
+            <tr><td>AddressLine:</td><td><textarea name="addressLine" rows="5" cols="15"></textarea></td></tr>
+            <tr><td>City:</td><td><input type="text" name="city"/></td></tr>
+            <tr><td>State:</td><td><input type="text" name="state"/></td></tr>
+            <tr><td>Country:</td><td>
+                <select name="country">
+                <option>Select-Country:</option>
+                <option>India</option>
+                <option>Pakistan</option>
+                <option>China</option>
+                <option>Bhutan</option>
+                <option>USA</option>
+                <option>France</option>
+                <option>Other</option>
+            </select></td></tr>
+            <tr><td>Contact:</td><td><input type="text" name="contact"/></td></tr>
+            <tr><td colspan="2" align="auto">
+                <input  id="submit" type="submit" value="register"/>
+                <input  id="reset" type="reset" value="clear"/>
+            </td></tr>
+        </table>
+    </form>
+</div>
+</div>
+
+</body>
+</html>

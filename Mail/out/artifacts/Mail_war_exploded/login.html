@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="mail-icon.png" rel="icon" type="image/x-icon"/>
+    <meta charset="ISO-8859-1">
+    <title>Login Page</title>
+    <style type="text/css">
+        .inputform {float:left;
+            width:370px;
+            border:4px orangered;border-radius:10px;padding:10px;
+            box-shadow: maroon;
+            background: url("g.jfif");
+
+        }
+        .inputform table tr td input,textarea,select{width:200px;}
+        #submit{margin-left:108px;width:100px;}
+
+        tr{
+            color: white;
+            font-size: large;
+        }
+        body{
+            font-size: large;
+        }
+
+        .design{background-color:white;color:black;}
+    </style>
+</head>
+<body background="k.jpg">
+
+<div align="center">
+<!-- header -->
+<h1 align="center">CSPIT MAIL</h1>
+<!--<h3 style="background-color:maroon;color:maroon;">c</h3>-->
+<!-- body -->
+
+        <div class="inputform" style="float:left;" >
+            <h2 class="design">Login Form</h2>
+            <form action="LoginServlet" method="post">
+                <table align="center">
+                    <tr><td>Email:</td><td><input type="email" name="email"/></td></tr>
+                    <tr><td>Password:</td><td><input type="password" name="password"/></td></tr>
+                    <tr><td colspan="2"><input id="submit" type="submit" value="login"/>
+                    </td></tr>
+                </table>
+            </form>
+        </div>
+</div>
+
+</body>
+</html>

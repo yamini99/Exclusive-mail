@@ -1,0 +1,65 @@
+<html>
+<head>
+    <link href="mail-icon.png" rel="icon" type="image/x-icon"/>
+    <title>CSPIT MAIL</title>
+<style>
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li:hover > ul {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 150px;
+        background: #efefef;
+        background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+        background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+        background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+        box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+        padding: 0 20px;
+        border-radius: 10px;
+        list-style: none;
+        position: relative;
+        display: inline-table;
+    }
+    nav ul:after {
+        content: ""; clear: both; display: block;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li:hover {
+        background: #4b545f;
+        background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+        background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+        background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+    }
+    nav ul li:hover a {
+        color: #fff;
+    }
+
+    nav ul li a {
+        display: block; padding: 25px 40px;
+        color: #757575; text-decoration: none;
+    }
+
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="InboxServlet">Inbox</a></li>
+        <li><a href="ComposeServlet">Compose Mail</a></li>
+        <li><a href="SentServlet">Send Mail</a></li>
+        <li><a href="TrashServlet">Trash</a></li>
+        <li><a href="ChangePass">Change Password</a></li>
+        <li><a href="LogoutServlet">Logout</a></li>
+    </ul>
+</nav>
+</body>
+</html>

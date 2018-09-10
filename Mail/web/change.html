@@ -1,0 +1,42 @@
+<link href="mail-icon.png" rel="icon" type="image/x-icon"/>
+<title>Change Password</title>
+    <style type="text/css">
+        .inputform {float:left;
+            width:370px;
+            border:4px orangered;border-radius:10px;padding:10px;
+            box-shadow: maroon;
+            background: url("g.jfif");
+
+        }
+        .inputform table tr td input,textarea,select{width:200px;}
+        #submit{margin-left:108px;width:100px;}
+
+        tr{
+            color: white;
+            font-size: large;
+        }
+
+
+    </style>
+
+<body background="k.jpg">
+
+<div align="center">
+
+
+    <div class="inputform" style="float:left;" >
+        <h2 style="background-color:white">Change Password</h2>
+        <form action="ChangePass1" method="get">
+            <table align="center">
+                <tr><td>Email:</td><td><input type="email" name="email"/></td></tr>
+                <tr><td>Existing Password:</td><td><input type="password" name="password"/></td></tr>
+                <tr><td>New Password:</td><td><input type="password" name="password1"/></td></tr>
+                <tr><td colspan="2"><input id="submit" type="submit" value="Change"/>
+                </td></tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
